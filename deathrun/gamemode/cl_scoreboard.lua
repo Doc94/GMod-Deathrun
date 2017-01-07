@@ -141,7 +141,7 @@ local function Refresh()
 	dlist:Clear()
 	local pool = {}
 
-	CreateTeamThing( "Deaths", Color( 160, 50, 50, 200 ) )
+	CreateTeamThing( "La Muerte", Color( 160, 50, 50, 200 ) )
 
 	for k, v in pairs( team.GetPlayers(TEAM_DEATH) ) do
 		if not v:Alive() then pool[#pool+1] = v continue end
@@ -149,7 +149,7 @@ local function Refresh()
 	end
 
 	CreateEmpty( 10 )
-	CreateTeamThing( "Runners", Color( 50, 50, 160, 200 ) )
+	CreateTeamThing( "Corredores", Color( 50, 50, 160, 200 ) )
 
 	for k, v in pairs( team.GetPlayers(TEAM_RUNNER) ) do
 		if not v:Alive() then pool[#pool+1] = v continue end
@@ -163,7 +163,7 @@ local function Refresh()
 	if #pool > 0 then
 
 		CreateEmpty( 10 )
-		CreateTeamThing( "Dead", Color( 160, 160, 160, 233 ) )
+		CreateTeamThing( "Se murieron", Color( 160, 160, 160, 233 ) )
 
 		for k, v in pairs( pool ) do
 			if not IsValid(v) then continue end

@@ -17,17 +17,17 @@ include( "rtv/cl_rtv.lua" )
 
 if SERVER then return end
 
-local name = "Dragon Dildo"
+local name = "Tu madre"
 
 language.Add( "trigger_hurt", name )
 language.Add( "env_explosion", name )
-language.Add( "worldspawn", name )
+language.Add( "worldspawn", "Spawn" )
 language.Add( "func_movelinear", name )
 language.Add( "func_physbox", name )
 language.Add( "func_rotating", name )
 language.Add( "func_door", name )
-language.Add( "entityflame", name )
-language.Add( "prop_physics", name )
+language.Add( "entityflame", "El fuego de mi kokoro" )
+language.Add( "prop_physics", "La fisica" )
 
 function draw.AAText( text, font, x, y, color, align )
 
